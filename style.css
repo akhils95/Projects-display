@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding-top: 130px;
 	background-color: #eddcbe;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -11,11 +12,18 @@ body {
 }
 
 .header{
-	margin: 0;
+	position: fixed;
+	top: 0px;
+	margin: auto;
+	width: 100%;
 	padding: 1rem;
 	box-shadow:
 		0 1px 5px,
 		inset 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+.logo{
+	cursor: pointer;
 }
 
 .inner_glow{
@@ -48,10 +56,13 @@ body {
 }
 
 .card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-end;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	text-align: center;
 	transition: all 0.3s linear;
 }
 
@@ -86,6 +97,13 @@ body {
 .disabled {
 	opacity: 0.6;
 	cursor: not-allowed;
+	margin: 0.5rem;
+	margin-bottom: 1rem;
+	padding: 12px 28px;
+	background-color: rgb(240, 240, 240);
+	color: black;
+	border: 2px solid #f44336;
+	border-radius: 8px;
 }
 
 .container{
@@ -93,12 +111,23 @@ body {
 }
 
 .footer{
-	margin: 0;
+	position: fixed;
+	bottom: 0px;
+	margin: auto;
+	width: 100%;
 	padding: 1rem;
 	background-color: white;
 }
 
+.right{
+	text-align: right;
+}
+
 .icon{
-	padding-right: 1rem;
-	padding-left: 1rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.rightpadd{
+	margin-right: 2rem;
 }
