@@ -85,6 +85,10 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.top{
+	margin-top: 10px;
+}
+
 .button {
 	cursor: pointer;
 	margin: 0.5rem;
@@ -112,15 +116,10 @@ body {
 	margin-bottom: 1rem;
 	padding: 12px 28px;
 	background-color: rgb(240, 240, 240);
-	color: black;
-	border: 2px solid #f44336;
+	color: #855e5a;
+	border: 2px solid #855e5a;
 	border-radius: 8px;
 	transition-duration: 0.4s;
-}
-
-.disabled:hover {
-	border: 2px solid #855e5a;
-	background-color: #cf6f65;
 }
 
 .container{

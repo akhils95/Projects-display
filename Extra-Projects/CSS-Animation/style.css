@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+	padding-top: 130px;
+	background-color: #eddcbe;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Dosis', sans-serif;
+}
+
+.blue{
+	background-color: #324597;
+}
+
+.header{
+	position: fixed;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	padding: 0.5rem;
+	box-shadow:
+		0 1px 5px,
+		inset 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+.inner_glow{
+	box-shadow: 
+		inset 0 2px 2px rgba(255,255,255,0.8),
+		inset 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+.display_block {
+	margin: 4rem;
+	margin-top: 1rem;
+	background-color: rgba(254, 255, 214);
+	padding: 2rem;
+}
+
+.container{
+	margin: 4rem;
+	margin-top: 1rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+}
+
+.center{
+	text-align: center;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-end;
+	background-color: rgba(254, 255, 214);;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.3s linear;
+}
+
+.container{
+	padding:0.01em 16px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	margin: auto;
+	width: 100%;
+	padding: 1rem;
+	background-color: white;
+}
