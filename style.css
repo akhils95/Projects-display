@@ -33,7 +33,7 @@ body {
 }
 
 .bg_grow:hover{
-	background-image: linear-gradient(to right, red , #324597);
+	background-image: linear-gradient(to right, #FF0000 , #324597);
 	width: 95%;
 	padding: 0;
 }
