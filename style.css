@@ -107,7 +107,6 @@ body {
 }
 
 .disabled {
-	opacity: 0.6;
 	cursor: not-allowed;
 	margin: 0.5rem;
 	margin-bottom: 1rem;
@@ -116,6 +115,12 @@ body {
 	color: black;
 	border: 2px solid #f44336;
 	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+
+.disabled:hover {
+	border: 2px solid #855e5a;
+	background-color: #cf6f65;
 }
 
 .container{
