@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	font-family: 'Dosis', sans-serif;
-	padding-bottom: 50px;
 }
 
 .project_bg{
@@ -30,11 +33,17 @@ body {
 	padding: 0;
 }
 
+.wr{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
 .elements{
 	padding: 1rem;
 	cursor: pointer;
 	margin: 0;
-	height: 1em;
+	height: auto;
 }
 
 a{
@@ -44,12 +53,19 @@ a{
 
 .selected{
 	background-color: #886734;
-	height: 100%;
+	height: auto;
 }
 .inner_glow{
 	box-shadow: 
 		inset 0 2px 2px rgba(255,255,255,0.8),
 		inset 0 -1px 1px rgba(0,0,0,0.5);
+}
+
+.main{
+	background-color: white;
+	margin: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .logo_container{
@@ -68,7 +84,54 @@ a{
 	transform: scale(1.2);
 }
 
+.content{
+	background-color: white;
+	color: black;
+	padding: 4rem;
+	margin: 0;
+}
+
+.grid_cont{
+	display: grid;
+	grid-template-columns: 6fr 6fr;
+	grid-gap: 10px;	
+}
+
+.item1{
+	grid-row-start: 1;
+	grid-row-end: 3;
+	text-align: center;
+}
+
+.item2{
+	text-align: center;
+}
+
+.item3{
+	text-align: center;
+}
+
+.show{
+	z-index: 100;
+}
+
+.image{
+	max-width: 600px;
+}
+  
+.insta_banner{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.insta_banner:hover{
+	background: linear-gradient(129deg, rgba(81,91,212,1) 0%, rgba(161,52,175,1) 25%, rgba(221,42,123,1) 50%, rgba(254,218,119,1) 75%, rgba(245,133,41,1) 100%);
+}
+
 .intro{
+	padding-top: 4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -90,19 +153,19 @@ a{
 	margin: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
-    width: 100%;
+	background-position: center;
+    margin: 2rem;
 }
 
 .container{
     margin: 0;
-    background-color: rgba(0,0,0,85%);
+    background-color: rgba(0,0,0,70%);
     height: 400px;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
-	box-shadow: inset 0 0 5px grey;
 	border: solid black 1px;
 }
 
@@ -114,7 +177,6 @@ a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-self: flex-end;
 }
 
 .top{
@@ -153,11 +215,34 @@ a{
 	transition-duration: 0.4s;
 }
 
+.store{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;	
+}
+
+.column1{
+	background-color: #886734;
+	cursor: pointer;
+	text-align: center;
+	border: solid 3px black;
+	border-radius: 5px;
+	padding: 2rem;
+	box-shadow: 1px 1px 5px;
+}
+
+.column2{
+	background-color: #886734;
+	cursor: pointer;
+	text-align: center;
+	border: solid 3px black;
+	border-radius: 5px;
+	padding: 2rem;
+	box-shadow: 1px 1px 5px;
+}
+
 .footer{
-	position: fixed;
-	bottom: 0px;
 	margin: 0;
-	width: 100%;
 	padding: 0.5rem;
 	background-color: #141414;
 }
