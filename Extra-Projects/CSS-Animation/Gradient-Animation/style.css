@@ -1,0 +1,17 @@
+body{
+	background-image: linear-gradient(to right, red , blue);
+}
+
+@keyframes change_color {
+	from {background-image: linear-gradient(to right, red , blue);}
+	to {background-image: linear-gradient(to left, red , blue);}
+}
+
+body{
+	animation-name: change_color;
+	animation-timing-function: ease-in-out;
+ 	animation-duration: 0.5s;
+ 	animation-iteration-count: infinite;
+ 	animation-direction: alternate;
+}
+

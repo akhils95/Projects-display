@@ -1,61 +1,109 @@
 body {
 	margin: 0;
-	padding-top: 130px;
-	background-color: #eddcbe;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 	font-family: 'Dosis', sans-serif;
-	padding-bottom: 85px;
+	padding-bottom: 50px;
 }
 
-.blue{
-	background-color: #324597;
+.project_bg{
+	background-image: url("images/Project-bg.jpg");
+}
+
+.graphic_bg{
+	background-image: url("images/Graphic-bg.jpg");
+}
+
+.nomar{
+	margin: 0
 }
 
 .header{
+	display: flex;
+	background-color: #141414;
+	color: white;
 	position: fixed;
 	top: 0px;
-	margin: auto;
-	width: 100%;
-	padding: 1rem;
-	box-shadow:
-		0 1px 5px,
-		inset 0 -1px 1px rgba(0,0,0,0.5);
-}
-
-.logo{
-	cursor: pointer;
-}
-
-.bg_grow{
-	width: 80px;
 	margin: 0;
+	width: 100%;
 	padding: 0;
 }
 
-.bg_grow:hover{
-	background-image: linear-gradient(to right, #FF0000 , #324597);
-	width: 95%;
-	padding: 0;
+.elements{
+	padding: 1rem;
+	cursor: pointer;
+	margin: 0;
+	height: 1em;
 }
 
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.selected{
+	background-color: #886734;
+	height: 100%;
+}
 .inner_glow{
 	box-shadow: 
 		inset 0 2px 2px rgba(255,255,255,0.8),
 		inset 0 -1px 1px rgba(0,0,0,0.5);
 }
 
-.display_block {
-	margin: 4rem;
-	margin-top: 1rem;
-	background-color: rgba(254, 255, 214);
-	padding: 2rem;
+.logo_container{
+	padding: 4rem;
+	padding-bottom: 0;
+	margin: 0;
+	background-color: rgba(0,0,0,70%);
+	height: 50px;
+}
+
+.logo{
+	cursor: pointer;
+}
+
+.logo:hover{
+	transform: scale(1.2);
+}
+
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0,0,0,70%);
+	color: white;
+	height: 650px;
+}
+
+.intro_short{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0,0,0,70%);
+	color: white;
+	height: 600px;
+}
+
+.banner{
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
 }
 
 .container{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    margin: 0;
+    background-color: rgba(0,0,0,85%);
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+	box-shadow: inset 0 0 5px grey;
+	border: solid black 1px;
 }
 
 .center{
@@ -66,24 +114,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.card {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: flex-end;
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition: all 0.3s linear;
-}
-
-.card:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+	align-self: flex-end;
 }
 
 .top{
@@ -95,9 +126,8 @@ body {
 	margin: 0.5rem;
 	margin-bottom: 1rem;
 	padding: 12px 28px;
-	background-color: rgb(240, 240, 240);
-	color: black;
-	border: 2px solid #f44336;
+	color: white;
+	border: 2px solid #ffffff;
 	border-radius: 8px;
 	transition-duration: 0.4s;
 }
@@ -107,8 +137,8 @@ body {
 }
 
 .button:hover {
-	background-color: #f44336;
-	color: white;
+	background-color: #ffffff;
+	color: black;
 }
 
 .disabled {
@@ -116,24 +146,20 @@ body {
 	margin: 0.5rem;
 	margin-bottom: 1rem;
 	padding: 12px 28px;
-	background-color: rgb(240, 240, 240);
-	color: #855e5a;
-	border: 2px solid #855e5a;
+	color: black;
+	border: 2px solid grey;
+	background-color: grey;
 	border-radius: 8px;
 	transition-duration: 0.4s;
-}
-
-.container{
-	padding:0.01em 16px;
 }
 
 .footer{
 	position: fixed;
 	bottom: 0px;
-	margin: auto;
+	margin: 0;
 	width: 100%;
-	padding: 1rem;
-	background-color: white;
+	padding: 0.5rem;
+	background-color: #141414;
 }
 
 .right{
@@ -147,4 +173,41 @@ body {
 
 .rightpadd{
 	margin-right: 2rem;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 8px;
+  background: #141414;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #886734; 
+}
+
+/*CSS Animation*/
+.anim{
+	background-image: linear-gradient(to right, green , yellow);
+}
+
+@keyframes change_color {
+	from {background-image: linear-gradient(to right, green , yellow);}
+	to {background-image: linear-gradient(to left, green , yellow);}
+}
+
+.anim{
+	animation-name: change_color;
+	animation-timing-function: ease-in-out;
+ 	animation-duration: 0.5s;
+ 	animation-iteration-count: infinite;
+ 	animation-direction: alternate;
 }
