@@ -6,17 +6,19 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   font-family: "Dosis", sans-serif;
 }
 
 .project_bg {
   background-image: url("images/Project-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .graphic_bg {
   background-image: url("images/Graphic-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .nomar {
@@ -311,8 +313,13 @@ a {
 }
 
 @media screen and (max-width: 415px) {
-  body {
-    background-size: contain;
-    background-position: top;
+  .grid_cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .store {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
