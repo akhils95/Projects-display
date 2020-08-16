@@ -32,13 +32,12 @@ body {
   position: fixed;
   top: 0px;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   padding: 0;
 }
 
 .wr {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 
